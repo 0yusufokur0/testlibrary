@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.techspiration.testlib"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24
@@ -51,7 +51,7 @@ afterEvaluate {
 
                 groupId = "com.github.0yusufokur0"
                 artifactId = "librarytest"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }
