@@ -25,17 +25,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     testImplementation("junit:junit:4.13.2")
@@ -50,7 +50,7 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.0yusufokur0"
-                artifactId = "librarytest"
+                artifactId = "testlib"
                 version = "1.1"
             }
         }
